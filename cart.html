@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        .cart-container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding-top: 97px;
+            padding-left: 70px;
+        }
+        .container10 {
+	        /* justify-content: center; */
+	        align-items: center;
+	        display: flex;
+	        /* height: 100%; */
+	        text-align: center;
+            margin-top: -20px;
+        }
+        button {
+            width: 32px;
+            height: 28px;
+            font-size: 21px;
+            color: honeydew;
+            background-color: rgb(45, 42, 42);
+            border: none;
+        }
+
+
+
+        #counting{
+            width: 32px;
+            height: 28px;
+            background-color: black; 
+            font-size: 20px;
+            color: red;
+            border-radius: none;
+
+        }
+        .cart-block1{
+            display: flex;
+        }
+        .cart-block-content, .cart-block-content1{
+            padding-left: 20px;
+        }
+        .delete-icon{
+            position: relative;
+            left: 278px;
+            bottom: 134px;
+        }
+        .cart-block2{
+            padding-top: 130px;
+            position: relative;
+            right: 376px;
+            display: flex;
+            
+        }
+       .cart-container1{
+        display: flex;
+    
+        border-bottom: 2px solid #383030;
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 401px;
+       }
+       .cart-products{
+        height: 450px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 500px;
+        scrollbar-color: #1c1a1a #1c1a1a;
+        background-color: #1c1a1a;
+        margin-bottom: 200px;
+        margin-left: 20px;
+        margin-top: 52px;
+       }
+       .order-summary h2{
+        color: #beaeae !important;
+       }
+       .order-summary{
+        margin-left: 128px;
+       }
+       .order-item{
+        border-bottom: 2px solid gray;
+       }
+       .order-item div{
+        color: white;
+        padding-bottom: 24px;
+
+       }
+       .order-item2 div{
+        color: white;
+        padding-bottom: 24px;
+        padding-left: 196px;
+        position: relative;
+        bottom: 120px;
+
+       }
+       
+       .order-price1{
+        padding-left: 168px;
+       }
+       .main-order{
+        width: 350px;
+        margin-top: 50px;
+       }
+       .price-amount{
+        position: relative;
+        left: 191px;
+       }
+       .checkout{
+        width: 360px;
+        border-radius: 3px;
+        background-color: red;
+        font-size: 20px;
+       }
+       .cart-p1{
+        color: white;
+        width: 270px;
+       }
+       
+    </style>
+
+</head>
+<body>
+    
+        <header>
+            <section>
+                <h2>Tech-Shop</h2>
+            </section>
+            <section class="icon">
+                <i  id="search" class="fa-solid fa-magnifying-glass" style="font-size: 20px; color: #bab5b5; "><span class="tooltip-text" style="font-family: Arial, Helvetica, sans-serif;">Search</span></i>
+                <i  id="cart" class="fa-solid fa-cart-shopping" style="font-size: 20px; color: #bab5b5; text-transform: lowercase;"><span class="cart-popup"style="font-family: Arial, Helvetica, sans-serif;">Cart</span></i>
+                <i id="user" class="fa-solid fa-user" style="font-size: 20px; color: #bab5b5;">
+                    <div class="user-popup" style="font-family: Arial, Helvetica, sans-serif;">
+                     <div>Hello!</div>
+                     <p>Access account manage order</p>
+                     <a href="./registration.html"><button type="button" class="login">Login/Signup</button></a>
+                     <hr>
+                     <p>Please Login</p>
+                    </div></i>
+              
+            </section>
+        </header>
+    <main>
+        <div class="cart-container">
+            <div class="cart-products">
+                <div class="cart-container1">
+                    <div class="cart-image">
+                        <img src="./images/products/jbl660nc-1.png" width="92px">
+                    </div>
+                        
+                    <div class="block-content4">
+                        <div class="cart-block-content">
+                            <p class="cart-p1">JBL Live 660NC Wireless Over-Ear NC Headphones</p>
+                            <p class="sports-price">₹999<span class="sport-del"><del>₹1,999</del></span></p>
+                            <div class="container10">            
+                                <!-- adding button and heading to show the digits -->
+                                <!--increment() and decrement() functions on button click-->
+                                    <button onclick="increment()">+</button>
+                                    <p id="counting">1</p>
+                                    <button onclick="decrement()">-</button>        
+                                </div>
+                            
+                            <div class="delete-icon">
+                                <i class="fa-regular fa-trash-can" aria-hidden="true" style="color: white; background-color: black;"></i>
+
+                            </div>
+                        
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="cart-container1">
+                    <div class="cart-image">
+                        <img src="./images/products/boat518-1.png" width="92px">
+                    </div>
+                        
+                    <div class="block-content4">
+                        <div class="cart-block-content">
+                            <p class="cart-p1">boAt Rockerz 518 On-Ear Wirless Headphones</p>
+                            <p class="sports-price">₹1,299<span class="sport-del"><del>₹3,9990</del></span></p>
+                            <div class="container10">            
+                                <!-- adding button and heading to show the digits -->
+                                <!--increment() and decrement() functions on button click-->
+                                    <button onclick="increment()">+</button>
+                                    <p id="counting">1</p>
+                                    <button onclick="decrement()">-</button>        
+                                </div>
+                            
+                            <div class="delete-icon">
+                                <i class="fa-regular fa-trash-can" aria-hidden="true" style="color: white; background-color: black;"></i>
+
+                            </div>
+                        
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="cart-container1">
+                    <div class="cart-image">
+                        <img src="./images/products/boat131-1.png" width="92px">
+                    </div>
+                        
+                    <div class="block-content4">
+                        <div class="cart-block-content">
+                            <p class="cart-p1">boAt Airpods 131 Wireless In-Ear Earbuds</p>
+                            <p class="sports-price">₹1,099<span class="sport-del"><del>₹2,999</del></span></p>
+                            <div class="container10">            
+                                <!-- adding button and heading to show the digits -->
+                                <!--increment() and decrement() functions on button click-->
+                                    <button onclick="increment()">+</button>
+                                    <p id="counting">1</p>
+                                    <button onclick="decrement()">-</button>        
+                                </div>
+                            
+                            <div class="delete-icon">
+                                <i class="fa-regular fa-trash-can" aria-hidden="true" style="color: white; background-color: black;"></i>
+
+                            </div>
+                        
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="cart-container1">
+                    <div class="cart-image">
+                        <img src="./images/products/jbl660nc-1.png" width="92px">
+                    </div>
+                        
+                    <div class="block-content4">
+                        <div class="cart-block-content">
+                            <p class="cart-p1">JBL Live 660NC Wireless Over-Ear NC Headphones</p>
+                            <p class="sports-price">₹999<span class="sport-del"><del>₹1,999</del></span></p>
+                            <div class="container10">            
+                                <!-- adding button and heading to show the digits -->
+                                <!--increment() and decrement() functions on button click-->
+                                    <button onclick="increment()">+</button>
+                                    <p id="counting">1</p>
+                                    <button onclick="decrement()">-</button>        
+                                </div>
+                            
+                            <div class="delete-icon">
+                                <i class="fa-regular fa-trash-can" aria-hidden="true" style="color: white; background-color: black;"></i>
+
+                            </div>
+                        
+                        </div>
+            
+                    </div>
+                </div>
+          </div>
+
+         
+         <div class="order-summary">
+            <div class="main-order">
+            <h2 style="color: white !important;">Order Summary ( 4 items )</h2>
+                <div class="order-item">
+                    <div>Original Price <span class="order-price1">₹22,978</span></div>
+                    <div>Discount<span class="order-price" style="color: green; padding-left: 200px;" >-₹10,132</span></div>
+                    <div>Delivery<span class="order-price" style="color: green; padding-left: 210px;">Free</span></div>
+                </div>
+            </div>
+            <div class="total-price">
+                <p class="price1" style="color: white;">Total Price<span class="price-amount">₹12,846</span></p>
+            </div>
+            <button type="button" class="checkout">checkout</button>
+        
+
+         </div>   
+     
+        
+              
+        </div>
+    
+
+    </main>
+     <!-- Footer -->
+     <footer>
+        <section>
+            <h2>Tech-Shop</h2>
+            <p class="footer-text">Subscribe to our Email alerts to receive early discount offers, and new product offers.</p>
+            <input type="email" name="email" placeholder="Email Address*" class="email">
+            <button type="button" name="button" class="subscribe">subscribe</button>
+        </section>
+        <section class="help">
+            <h4>Help</h4>
+            <ul type="none">
+                <li>FAQs</li>
+                <li>Track Order</li>
+                <li>Cancel Order</li>
+                <li>Return Order</li>
+                <li>Warranty Info</li>
+            </ul>
+        </section>
+        <section class="policies">
+            <h4>Policies</h4>
+            <ul type="none">
+                <li>Return Policies</li>
+                <li>Security</li>
+                <li>SiteMap</li>
+                <li>Privacy Policy</li>
+                <li>Term&Conditions</li>
+            </ul>
+        </section>
+        <section class="company">
+            <h4>Company</h4>
+            <ul type="none">
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Service Centers</li>
+                <li>Carrers</li>
+                <li>Affiliates</li>
+            </ul>
+        </section>
+    
+    </footer>
+    <hr>
+
+    <div class="sub-footer">
+        <section>
+            <p class="footer-paragraph">2024| All Rights Reserved. Built By | <span class="sub-paragraph">Rinku Jacob</span></p>
+        </section>
+            <section class="footer-icon">
+                
+                <img src="./icons/icons8-facebook-24.png" alt="" class="facebook">
+                <img src="./icons/icons8-twitter-30.png" alt="" class="twitter">
+                <img src="./icons/icons8-instagram-48.png" alt="" class="instagram">
+               <img src="./icons/icons8-linkedin-30.png" alt="" class="linkdin">         
+             </section>
+        
+    
+    </div>
+</body>
+</html>
+</body>
+</html>

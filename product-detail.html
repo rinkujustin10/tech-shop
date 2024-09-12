@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <title>Document</title>
+   
+</head>
+<style>
+     .img1{
+        border: 1px solid gray;
+        width: 100px;
+        height: 93px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+     .product-image{
+       position: relative;
+    
+       
+    }
+    .product-content{
+        position: relative;
+       
+        width: 300px;
+
+    }
+    .main-imag{
+        position: relative;
+        right: 200px;
+    }
+    .rate-text{
+        display: contents;
+    }
+    hr{
+        width: 100%;
+        border-color:  gray;
+        margin-top: 16px;
+
+    }
+    .hr1{
+        width: 100%;
+        border-color:  gray;
+        margin-top: -32px; 
+    }
+    .main-head{
+        color: white;
+    }
+    .main-title{
+        color: white;
+    }
+    .main-price{
+        color: white;
+        font-size: 20px;
+    }
+    .del-price{
+        color: gray;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .sub-title{
+        color: green;
+    }
+    .stock-btn{
+        position: relative;
+        left: 203px;
+        bottom: 76px;
+    }
+    .btn1{
+        width: 83px;
+        height: 37px;
+        background-color: #257b25;
+        border: none;
+        border-radius: 3px;
+        color: white;
+    }
+    .btn2{
+        width: 140px;
+        height: 42px;
+        font-size: 12px;
+        text-align: unset;
+        width: 140px;
+        color: gray;
+        background-color: #0f0e0e;
+        border: 1px solid gray;
+        border-radius: 4px;
+
+    }
+    .btn3{
+        position: relative;
+        left: 19px;
+        width: 140px;
+        height: 42px;
+        font-size: 12px;
+        text-align: unset;
+        width: 140px;
+        color: gray;
+        background-color: #0f0e0e;
+        border: 1px solid gray;
+        border-radius: 4px;
+    }
+    .cart1{
+        margin-top: 20px;
+        width: 170px;
+        height: 40px;
+        background-color: #db1a1a;
+        border: none;
+        border-radius: 5px;
+        color: white;
+    } 
+  
+     .product{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-left: 40px;
+        margin-bottom: 100px;
+        padding-top: 130px;
+     }
+    .block3{
+        position: relative;
+        /* bottom: 800px; */
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .block3 div{
+        color: gray;
+        font-size: 18px;
+       
+    }
+    
+    .block3 div:hover {
+    text-align: center;
+    background-color: #e31d1d;
+    color: white;
+    /* border: 1px; */
+    width: 126px;
+    height: 24px;
+    border-radius: 3px;
+    }
+    .brand{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        position: relative;
+        /* bottom: 750px; */
+        /* margin-bottom: 700px; */
+    }
+    
+       
+    .brand-name div{
+        color: gray;
+        padding-top: 25px;
+        padding-left: 20px;
+    }
+    .brand-name1 div{
+        color: gray;
+        padding-top: 25px;
+        padding-left: 20px;
+        color: white;
+        text-align: -webkit-right;
+    }
+   .brand-name1{
+    right: 1152px;
+    position: relative;
+  }
+  .product-item div:first-child{
+    border-color: white;
+  }
+  /* .related-product{
+    position: relative;
+    bottom: 1338px;
+  } */
+   
+    
+</style>
+<body>
+    
+    
+    <header>
+        <section>
+            <h2>Tech-Shop</h2>
+        </section>
+        <section class="icon">
+            <i  id="search" class="fa-solid fa-magnifying-glass" style="font-size: 20px; color: #bab5b5; "><span class="tooltip-text" style="font-family: Arial, Helvetica, sans-serif;">Search</span></i>
+            <i  id="cart" class="fa-solid fa-cart-shopping" style="font-size: 20px; color: #bab5b5; text-transform: lowercase;"><span class="cart-popup"style="font-family: Arial, Helvetica, sans-serif;">Cart</span></i>
+            <i id="user" class="fa-solid fa-user" style="font-size: 20px; color: #bab5b5;">
+                <div class="user-popup" style="font-family: Arial, Helvetica, sans-serif;">
+                 <div>Hello!</div>
+                 <p>Access account manage order</p>
+                 <a href="./registration.html"><button type="button" class="login">Login/Signup</button></a>
+                 <hr>
+                 <p>Please Login</p>
+                </div></i>
+          
+        </section>
+    </header>
+    <main>
+    <!-- First Block -->
+    <div class="product">
+        <div class="product-item">
+            <div class="img1">
+                <img src="./images/products/jbl660nc-1.png" width="92px">
+            </div>
+            <div class="img1">
+                <img src="./images/products/jbl660nc-2.png" width="92px">
+            </div>
+            <div class="img1">
+                <img src="./images/products/jbl660nc-3.png" width="92px">
+            </div>
+            <div class="img1">
+                <img src="./images/products/jbl660nc-4.png" width="92px">
+            </div>
+        </div>
+
+        <div class="product-image">
+            <div class="main-imag">
+                <img src="./images/products/jbl660nc-1.png" width="500px">
+            </div>
+        </div>
+    
+
+        <div class="product-content">
+            <div class="content1">
+                <h2 class="main-head">JBL Live 660NC </h2>
+                <p class="main-title">Wireless Over-Ear NC Headphones</p>
+                <div class="live-rate">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="rate-text"> | 1234 Rating</p>
+                    <hr>
+                </div>
+            </div>
+        
+
+            <div class="product-content2">
+                <div class="content2">
+                    <p class="main-price">₹9,999<span class="del-price"><del>₹14,999</del></span>
+                    <p class="sub-title">You save:₹5,000(33%)</p>
+                    <p class="sub-title1">(Inclusive of all taxes)</p>
+                    <div class="stock-btn">
+                        <button type="button" class="btn1">✓ In Stock</button>
+                    </div>
+                    <hr class="hr1">
+                </div>
+            </div>
+
+            <div class="product-content3">
+                <div class="content3">
+                    <p class="title3">Offers and Discounts</p>
+                    <div class="discount-btn">
+                        <button type="button" class="btn2">No Cost EMI On Credit Card</button>
+                        <button type="button" class="btn3">No Cost EMI On Credit Card</button>
+                    </div>
+                    <hr class="hr2">
+                </div>
+            </div>
+            <button type="button" class="cart1">Add to Cart</button>
+        </div>
+
+    </div>
+
+     <!-- /Specification Block(Block2) -->
+     <div class="block3">
+        <div class="t1">Specifications</div>
+        <div>Overview</div>
+        <div>Reviews</div>
+    </div>
+
+    <div class="brand">
+        <div class="brand-name">
+            <div>Brand</div>
+            <div>Model</div>
+            <div>Generic Name</div>
+            <div>HeadPhone Type</div>
+            <div>Connectivity</div>
+            <div>Microphone</div>
+        </div>
+        <div class="brand-name1">
+            <div>JBL</div>
+            <div>JBL Live 660NC</div>
+            <div>Headphones</div>
+            <div>Over Ear</div>
+            <div>Wireless</div>
+            <div>Yes</div>
+        </div>
+
+    </div>
+
+    <!-- Related product -->
+     <div class="related-product">
+     <h2 class="related-heading">Related Products</h2>
+    <div class="product-container2">
+        <div class="jbl-live">
+            <div class="live-image">
+            <img src="./images/products/jbl660nc-1.png" width="150px" height="150px">
+            </div>
+            <div class="live-content">
+                <div class="live-rate">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <h3>JBL Live 660NC</h3>
+                <p class="live-text">Wireless Over-Ear NC Headphones</p>
+                <hr>
+                <p class="live-rate">₹9,999<span class="live-del"><del>₹14,999</del></span></p>
+                <button type="button" class="cart-btn">Add to cart</button>
+            </div>
+        </div>
+        <div class="jbl-live">
+            <div class="live-image">
+            <img src="./images/products/boat518-1.png" width="150px" heigt="150px"/>
+            </div>
+            <div class="live-content">
+                <div class=" ">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <h3>boAt Rockerz 518</h3>
+                <p class="live-text">On-Ear Wirless Headphones</p>
+                <hr>
+                <p class="live-rate">₹1,299<span class="live-del"><del>₹3,990</del></span></p>
+                <button type="button" class="cart-btn">Add to cart</button>
+            </div>
+        </div>
+        
+        <div class="jbl-live1">
+            <div class="live-image1">
+            <img src="./images/products/boat410-1.png" width="150px" heigt="150px"/>
+            </div>
+            <div class="live-content1">
+                <div class="live-rate1">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <h3>boAt Rockerz 410</h3>
+                <p class="live-text1">Bluetooth & Wired On-Ear Headphones</p>
+                <hr>
+                <p class="live-rate1">₹1,599<span class="live-del1"><del>₹2,990</del></span></p>
+                <button type="button" class="cart-btn1">Add to cart</button>
+            </div>
+        </div>
+        <div class="jbl-live1">
+            <div class="live-image1">
+            <img src="./images/products/sonyXb910n-1.png" width="150px" heigt="150px"/>
+            </div>
+            <div class="live-content1">
+                <div class="live-rate1">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    
+                </div>
+                <h3>Sony WH-XB910N</h3>
+                <p class="live-text1">Wireless Over-Ear  Headphones</p>
+                <hr>
+                <p class="live-rate1">₹1,3489<span class="live-del1"><del>₹1,9990</del></span></p>
+                <button type="button" class="cart-btn1">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    </div>
+     <!-- Our Advatages -->
+            
+     <h2 class="our-advatage">Our Advantages</h2>
+     <div class="advatage">
+      <div class="express-delivery">
+         <div class="express-img">
+             <i class="fa-solid fa-truck-fast" style="color: red;"></i>
+         </div>
+         <div class="express-text">
+             <p class="express-head"><b>Express Delivery</b></p>
+             <p class="express-pragraph">Ships in 24 Hours</p>
+         </div>
+        </div>
+        <div class="express-delivery">
+         <div class="express-img">
+             <i class="fa-solid fa-shield-halved" style="color: red;"></i>
+         </div>
+         <div class="express-text">
+             <p class="express-head"><b>Brand Warranty</b></p>
+             <p class="express-pragraph">100% Original Product</p>
+         </div>
+        </div>
+        <div class="express-delivery">
+         <div class="express-img">
+             <i class="fa-sharp fa-solid fa-tags" style="color: red;"></i></i>
+         </div>
+         <div class="express-text">
+             <p class="express-head"><b>Exciting Deals</b></p>
+             <p class="express-pragraph">On all Prepaid Orders </p>
+         </div>
+        </div>
+        <div class="express-delivery">
+         <div class="express-img">
+             <i class="fa-regular fa-credit-card" style="color: red;"></i>
+         </div>
+         <div class="express-text">
+             <p class="express-head"><b>Secure Payment</b></p>
+             <p class="express-pragraph">SSL/Secure Certificate</p>
+         </div>
+        </div>
+
+      </div>
+
+    </main>
+    
+
+     <!-- Footer -->
+     <footer>
+        <section>
+            <h2>Tech-Shop</h2>
+            <p class="footer-text">Subscribe to our Email alerts to receive early discount offers, and new product offers.</p>
+            <input type="email" name="email" placeholder="Email Address*" class="email">
+            <button type="button" name="button" class="subscribe">subscribe</button>
+        </section>
+        <section class="help">
+            <h4>Help</h4>
+            <ul type="none">
+                <li>FAQs</li>
+                <li>Track Order</li>
+                <li>Cancel Order</li>
+                <li>Return Order</li>
+                <li>Warranty Info</li>
+            </ul>
+        </section>
+        <section class="policies">
+            <h4>Policies</h4>
+            <ul type="none">
+                <li>Return Policies</li>
+                <li>Security</li>
+                <li>SiteMap</li>
+                <li>Privacy Policy</li>
+                <li>Term&Conditions</li>
+            </ul>
+        </section>
+        <section class="company">
+            <h4>Company</h4>
+            <ul type="none">
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Service Centers</li>
+                <li>Carrers</li>
+                <li>Affiliates</li>
+            </ul>
+        </section>
+    
+    </footer>
+    <hr>
+
+    <div class="sub-footer">
+        <section>
+            <p class="footer-paragraph">2024| All Rights Reserved. Built By | <span class="sub-paragraph">Rinku Jacob</span></p>
+        </section>
+            <section class="footer-icon">
+                
+                <img src="./icons/icons8-facebook-24.png" alt="" class="facebook">
+                <img src="./icons/icons8-twitter-30.png" alt="" class="twitter">
+                <img src="./icons/icons8-instagram-48.png" alt="" class="instagram">
+               <img src="./icons/icons8-linkedin-30.png" alt="" class="linkdin">         
+             </section>
+        
+    
+    </div>
+</body>
+</html>

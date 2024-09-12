@@ -1,0 +1,488 @@
+       
+body{
+ background-color: black;
+
+}
+
+ header{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     background-color: #0f0e0e;
+     position: sticky;
+     top: 0px;
+
+ }
+ header h2{
+    margin-left: 20px;
+ }
+ main{
+    background-color: #0f0e0e;
+ }
+ h3,h4{
+     color: white;
+ }
+ h2{
+     color: gray;
+ }
+  .icon{
+     margin-left: 350px;
+     align-content: space-evenly;
+ }
+
+ footer{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     /* border-bottom: 1px solid gray;  */
+     background-color: black ;
+     /* padding-left: 40px; */
+     position: relative;
+     left: 0px;
+      margin-top: 20px;
+     padding-left: 20px;
+     /* bottom: 60px; */
+     
+ }
+ p{
+     color: gray;
+     width: 255px;
+ }
+ .email{
+     background-color: black;
+     width: 250px;
+     height: 30px;
+     border-radius: 5px;
+     border: 2px solid gray;
+ }
+ .subscribe{
+     display: block;
+     margin-top: 20px;
+     width: 100px;
+     height: 40px;
+     border-radius: 5px;
+     background-color: red;
+     border: none;
+ }
+
+ footer .help{
+     padding-left: 100px;
+ }
+ footer h4{
+     padding-left: 37px;
+ }
+ .help ul{
+     width: 200px;
+ }
+ .help li{
+     text-decoration: none;
+     color: gray;
+     padding-bottom: 15px;
+ }
+ .policies{
+     padding-left: 100px;
+ }
+ .policies ul{
+     width: 200px;
+ }
+ .policies li{
+     text-decoration: none;
+     color: gray;
+     padding-bottom: 15px;
+ }
+   .company{
+     padding-left: 100px;
+ } 
+ .company ul{
+     width: 200px;
+ }
+ .company li{
+     text-decoration: none;
+     color: gray;
+     padding-bottom: 15px;
+ }
+ .sub-footer{
+     background-color: black;
+ }
+ hr{
+     width: 102%;
+     border-color: darkgray;
+     margin: 0%;
+     padding: 0%;
+ }
+ .sub-footer{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     margin-top: 20px;
+     margin-bottom: 20px;
+
+ }
+ .footer-paragraph{
+     color: gray;
+     white-space: nowrap;
+ }
+ .sub-paragraph{
+     color: white;
+ }
+ .facebook{
+     width: 20px;
+ }
+ .twitter{
+     width: 20px;
+     padding: 0px 50px 0px;
+ }
+ .instagram{
+     width: 20px;
+     padding: 0px 50px 0px 0px;
+ }
+ .linkdin{
+     width:20px;
+ }
+ .footer-icon{
+     padding-left: 500px;
+ }
+ .banner{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+    padding-left: 100px;
+    padding-top: 300px;
+   padding-bottom: 200px;
+
+ 
+ }
+ div .banner-text{
+     padding-left: 60px;
+ }
+ .banner-text .main-head{
+     color: gray;
+     font-size: 30px;
+ }
+ .banner-text .sub-head{
+     color: gray;
+     font-size: 50px;
+     width: 410px;
+ }
+ .banner-price{
+     color: gray;
+     font-size: 30px;
+ }
+ .btn-shop{
+     margin-top: 20px;
+     width: 100px;
+     height: 40px;
+     border-radius: 5px;
+     background-color: red;
+     border: none;
+     color: rgb(214, 205, 205);
+ }
+ /* Featured product */
+ .featured-product{
+     display: flex;
+     padding-left: 30px;
+     padding-top: 100px;
+     position: relative;
+     /* bottom: 100px; */
+ }
+ .sport-text{
+     width: 130px;
+     text-align: center;
+     align-content: center;
+ }
+ .sport-img{
+     width: 150px;
+     position: relative;
+     right: 30px;
+     height: 150px;
+
+ }
+ .featured-head{
+     color: white;
+     text-align: center;
+     align-content: center;
+     position: relative;
+     bottom: 100px;
+ }
+ 
+ .boat-img{
+     width: 200px;
+     height: 200px;
+     position: relative;
+     right: 40px;
+ }
+ .sports-price{
+     color: white;
+ }
+ .sport-del{
+     color: gray;
+     position: relative;
+     left: 10px;
+     
+ }
+ .boat-del{
+     color: gray;
+     position: relative;
+     left: 10px;
+     font-size: 20px;
+     
+ }
+ .boat-price{
+     font-size: 20px;
+     color: white;
+     position: relative;
+     /* left: 40px; */
+ }
+ .boat-text{
+     font-size: 20px;
+ }
+ .boat-airpod{
+     position: relative;
+     bottom: 50px;
+ }
+ .rockerz-img{
+     width: 400px;
+     height: 400px;
+     position: relative;
+     right: 100px;
+ }
+ .jbl-img{
+     width: 200px;
+     height: 200px;
+     position: relative;
+     right: 60px;
+ }
+ .rockerz-img1{
+     width: 150px;
+     height: 150px;
+ }
+ .boat-rockerz{
+     padding-left: 100px;
+     position: relative;
+     bottom: 200px;
+ }
+ .rockerz-text{
+     font-size: 26px;
+ }
+ .rockerz-price{
+     font-size: 26px;
+     color: white;
+ }
+ .rockerz-del{
+     color: gray;
+     font-size: 26px;
+     padding-left: 10px;
+ }
+ .jbl-text{
+     font-size: 20px;
+
+ }
+ .jbl{
+     position: relative;
+     bottom: 50px;
+ }
+ .jbl-price{
+     font-size: 20px;
+     color: white;
+ }
+ .jbl-del{
+     color: gray;
+     font-size: 18px;
+     position: relative;
+     bottom: 20px;
+ }
+ .rockerz-price1{
+     color: white;
+     position: relative;
+     left: 40px;
+ }
+ .rockerz-del1{
+     color: gray;
+     position: relative;
+     left: 20px;
+    
+ }
+ /* Top products */
+ .top-head {
+     color: white;
+     text-align: center;
+     position: relative;
+     bottom: 80px;
+ }
+ .product-title{
+     color: white;
+     display: flex;
+     position: relative;
+     font-size: 18px;
+     /* top: 50px; */
+     padding: 20px 0px 20px 0px;
+     justify-content: space-evenly;
+      /* padding-left: 30px;  */
+
+ }
+ .product-title div:hover{
+     background-color: red;
+ }
+ .checked{
+     color: red;
+ }
+ .product-container,.product-container1,.product-container2{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     margin-top: 40px;
+     position: relative;
+     left: 10px;
+     margin-left: 100px;
+    
+ }
+ .jbl-live,.jbl-live1,.jbl-live2{
+     border: 1px solid gray;
+     width: 220px;
+     height: 410px;
+ }
+ .live-content,.live-content1,.live-content2{
+     padding-left: 20px;
+     padding-top: 10px;
+ }
+ .live-text,.live-text1,.live-text2{
+     width: 200px;
+ }
+ .cart-btn,.cart-btn1,.cart-btn2{
+     width: 160px;
+     height: 30px;
+     color: white;
+     background-color: red;
+     border: none;
+     /* border-radius: 5px; */
+ }
+ .live-image,.live-image1,.live-image2{
+     background-color: #24272e;
+     padding-left: 24px;
+     padding-top: 10px;
+ }
+ .live-content hr, .live-content1 hr,.live-content2 hr{
+     width: 90%;
+     margin: unset;
+     border-color: gray;
+ }
+ .live-rate, .live-rate1,.live-rate2{
+     color: white;
+     font-size: 18px;
+ }
+ .live-del,.live-del1,.live-del2{
+     font-size: 16px;
+     color: gray;
+     padding-left: 10px;
+     
+ }
+ .cart-text{
+     font-size: 28px;
+     padding-top: 140px;
+     padding-left: 40px;
+ }
+ .express-delivery{
+     margin-top: 100px;
+     display: flex;
+     padding-left: 20px;
+ }
+ .our-advatage{
+     color: white;
+     margin-top: 120px;
+     text-align: center;
+ }
+ 
+
+.tooltip-text{
+    position: relative;
+    font-size: 10px;
+    top: 50px;
+    right: 30px;
+    color: white;
+    border: 2px solid gray;
+    padding: 10px;
+    visibility: hidden;
+    z-index: 5;
+}
+#search:hover .tooltip-text{
+    visibility: visible;
+}
+
+
+.cart-popup{
+    position: relative;
+    font-size: 10px;
+    top: 50px;
+    right: 30px;
+    color: white;
+    border: 2px solid gray;
+    padding: 10px;
+    visibility: hidden;
+    /* width: 200px; */
+
+
+}
+#cart:hover .cart-popup{
+    visibility: visible;
+}
+#user{
+    position: absolute;
+    right: -5px;
+}
+.user-popup{
+    position: relative;
+    font-size: 10px;
+    top: 10px;
+    right: 30px;
+    color: white;
+    border: 2px solid gray;
+    padding: 10px;
+    visibility: hidden;
+    width: 179px;
+    padding: 15px;
+    background-color: black;
+
+}
+ #user:hover .user-popup{
+    visibility: visible;
+} 
+.login{
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 93px;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    border: 2px solid #292828;
+}
+
+/* product details */
+.related-heading{
+    color: white;
+    text-align: center;
+
+}
+
+/* Our Advantages */
+.advatage{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-around;
+    margin-bottom: 100px;
+    position: relative;
+    bottom: 50px;
+}
+.express-img{
+    padding-top: 23px;
+    font-size: 30px;
+}
+.express-pragraph{
+    position: relative;
+    bottom: 10px;
+}
+.express-head{
+    color: white;
+}
+.express-text{
+    padding-left: 20px;
+}
+.live-star{
+    font-size: 10px;
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: black;
+      }
+      .sign-form{
+        border: 1px solid gray;
+        width: 400px;
+        padding-left: 48px;
+        padding-bottom: 20px;
+        margin-left: 520px;
+        margin-top: 150px;
+        border-radius: 5px;
+      }
+     
+      input{
+        margin-top: 20px;
+        width: 324px;
+        height: 30px;
+        background-color: black;
+        border: 1px solid gray;
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+     }
+     form{
+      width: 330px;
+     }
+     .separator {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .separator::before,
+    .separator::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid gray;
+    }
+
+    .separator:not(:empty)::before {
+      margin-right: 1.25em;
+    }
+
+    .separator:not(:empty)::after {
+      margin-left: 1.25em;
+    }
+    .sign-up{
+      color: gray;
+     
+    }
+    h2{
+      color:white;
+    }
+    .btn-sign{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 330px;
+      height: 36px;
+      background-color: red;
+      border: none;
+    }
+    .btn-facebook{
+      width: 100px;
+      height: 36px;
+      border: none;
+      color: white;
+      background-color: #073980;
+    }
+    .btn-google{
+      width: 100px;
+      height: 36px;
+      border: none;
+      color: white;
+      background-color: #AE0000;
+      margin: 0px 10px 0px 10px;
+    }
+    .btn-twitter{
+      width: 100px;
+      height: 36px;
+      border: none;
+      color: white;
+      background-color: deepskyblue; 
+    }
+    </style>
+</head>
+<body>
+  <div class="sign-form">
+    <h2>SignUP</h2>
+    <p class="sign-up">Already Have an Account ? Login</p>
+    <form>
+        <input type="text" name="name" placeholder="Username" class="user-name"/>
+        <input type="email" name="email" placeholder="Email" class="email"/>
+        <input type="password" name="password" placeholder="Password" class="pwd"/>
+        <input type="password" name="password" placeholder="Confirm Password" class="pwd1"/>
+        <button type="button" class="btn-sign">Signup</button>
+        <div class="separator">or login with</div>
+        <button type="button" class="btn-facebook">Facebook</button>
+        <button type="button" class="btn-google">Google</button>
+        <button type="button" class="btn-twitter">Twitter</button>
+      
+        
+
+
+    </form>
+  </div>
+</body>
+</html>
